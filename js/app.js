@@ -34,7 +34,7 @@ validationInput.addEventListener("blur", (event) => {
   const input = event.target;
   const requiredLength = Number(input.dataset.length);
 
-  if (input.value.length === requiredLength) {
+  if (input.value.length >= requiredLength) {
     input.classList.add("valid");
     input.classList.remove("invalid");
   } else {
